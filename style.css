@@ -4,17 +4,20 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
-
-.hero{
+/* background */
+.img-container{
     height: 100vh;
     width: 100%;
-    background-image: url('/fondo.jpg');
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-image: url('imágenes/fondo.jpg');
     position: relative;
     background-size: cover;
     background-position: center;
 }
 
 nav{
+    padding-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,15 +26,6 @@ nav{
     padding-right: 10%;
     }
 
-.logo{
-    color: white;
-    font-size: 28px;
-
-}
-span{
-    color:rgb(201, 6, 6);
-}
-
 nav ul li{
     list-style-type: none;
     display: inline-block;
@@ -39,18 +33,20 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    font-family: Libre Baskerville;
+    color: black;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: italic;
     cursor: pointer;
+    font-size: 20px;
 }
-
+/* Brillo y transición para paneles navbar*/
 a:hover {
-    color: red;
-    transition: 0.3s;
+    color: rgb(54, 109, 180);
+    transition: 0.5s;
 }
 
-
+/* Botón navbar*/
 button{
     border: none;
     background-color: rgb(201, 6, 6);
@@ -66,4 +62,33 @@ button{
 button:hover{
     transform: scale(1.3);
 
+}
+
+/* texto centralizado en image bg*/
+.centro{
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    color: #ffffff; 
+    font-family: Think Big;
+    font-size: 48px;
+}
+/* Sección de categorías */
+.categoria{
+    padding: 0;
+    margin: 25px;
+    color: rgb(0, 0, 0);
+    font-family: Hyperjump; font-style: light oblique; font-size: 28px;
+}
+
+hr{
+    height: 5px; border-top: 2px solid rgb(55, 43, 66); opacity: 100%;
+}
+
+.productos{
+    display: flex;
+    margin: 15px;
+    align-content: center;
+}
+.productos img:first-child{
+    margin-right: 1085px;
 }
