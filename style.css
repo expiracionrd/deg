@@ -16,6 +16,10 @@
     background-position: center;
 }
 
+.categoria {
+    margin-top: 50px;
+}
+
 nav{
     padding-bottom: 30px;
     display: flex;
@@ -81,7 +85,7 @@ button:hover{
     font-size: 48px;
 }
 /* Sección de categorías */
-.categoria{
+.category-title{
     padding: 0;
     margin: 25px;
     color: rgb(0, 0, 0);
@@ -99,4 +103,8 @@ hr{
 }
 .productos img:first-child{
     margin-right: 1085px;
+}
+
+.category-container {
+    margin-top: 80px;
 }
